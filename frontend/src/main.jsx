@@ -8,7 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Home from './pages/home/home.jsx';
+import Home from './pages/home/Home.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import CategoryPage from './pages/category/CategoryPage.jsx';
 import SearchPage from './pages/SearchPage.jsx';
