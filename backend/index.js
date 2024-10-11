@@ -7,7 +7,13 @@ const cors = require('cors')
 //14COH7rVrvocPBgq
 
 app.use(express.json())
-app.use(cors());
+app.use(cors(
+  {
+    origin: "https://mern-food-app.vercel.app",
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 
 async function main() {
     await mongoose.connect('mongodb+srv://hba777:14COH7rVrvocPBgq@food-react-app.96ofi.mongodb.net/food-react-app?retryWrites=true&w=majority&appName=food-react-app');
