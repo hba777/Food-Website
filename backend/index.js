@@ -9,7 +9,7 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors(
   {
-    origin: "https://mern-food-app.vercel.app",
+    origin: "",
     methods: ["POST", "GET"],
     credentials: true
   }
